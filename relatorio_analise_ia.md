@@ -1,6 +1,3 @@
-cd ~/trabalho-computacao-nuvem-etapa1
-
-cat << 'EOF' > relatorio_analise_ia.md
 # Trabalho I — Comparação de Serviços de Inteligência Artificial em Nuvem
 
 **Disciplina:** Computação em Nuvem
