@@ -1,1 +1,11 @@
-provedor,categoria,servico,operacao,unidade,preco,moeda,regiao,data_consulta,fonte
+provedor,categoria,servico,operacao,unidade,preco,moeda,regiao,data_consulta,fonte,observacao
+AWS,PLN,Amazon Comprehend,DetectSentiment,100 caracteres,0.0001,USD,us-east-1,2026-09-30,https://aws.amazon.com/comprehend/pricing/,Preço de referência
+GCP,PLN,Cloud Natural Language,analyzeSentiment,1000 caracteres,1.00,USD,N/A,2026-09-30,https://cloud.google.com/products/natural-language/pricing/,Preço de referência
+Azure,PLN,Azure AI Language,Sentiment Analysis,1000 caracteres,,USD,,2026-09-30,https://azure.microsoft.com/pt-br/pricing/details/language/,Preencher região/tier
+AWS,Visão,Amazon Rekognition,DetectLabels,imagem,0.001,USD,us-east-1,2026-09-30,https://aws.amazon.com/rekognition/pricing/,Primeiro milhão
+GCP,Visão,Cloud Vision,Label Detection,imagem,0.0015,USD,N/A,2026-09-30,https://cloud.google.com/vision/pricing/,Preço de referência
+Azure,Visão,Azure AI Vision,Image Analysis,transação,,USD,,2026-09-30,https://azure.microsoft.com/pt-br/pricing/details/computer-vision/,Preencher feature/região
+AWS,Documentos,Amazon Textract,AnalyzeDocument - Forms,página,0.05,USD,us-west-2,2026-09-30,https://aws.amazon.com/textract/pricing/,Forms
+AWS,Documentos,Amazon Textract,AnalyzeDocument - Tables,página,0.015,USD,us-west-2,2026-09-30,https://aws.amazon.com/textract/pricing/,Tables
+GCP,Documentos,Document AI Form Parser,Form Parser,página,0.03,USD,N/A,2026-09-30,https://cloud.google.com/products/document-ai/pricing/,US$30 por 1000 páginas
+Azure,Documentos,Azure AI Document Intelligence,prebuilt-layout,página,,USD,,2026-09-30,https://azure.microsoft.com/pt-br/pricing/details/document-intelligence/,Preencher modelo/região

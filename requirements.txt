@@ -1,0 +1,11 @@
+pandas
+matplotlib
+openpyxl
+boto3
+google-cloud-language
+google-cloud-vision
+google-cloud-documentai
+azure-ai-textanalytics
+azure-ai-vision-imageanalysis
+azure-ai-documentintelligence
+azure-core

@@ -1,1 +1,4 @@
 categoria,cenario,unidade,quantidade,hipoteses
+PLN,Processamento mensal de textos,caracteres,1000000,Comparação de preço de tabela
+Visão,Análise mensal de imagens,imagens,10000,Label Detection/Tags
+Documentos,Processamento mensal de documentos,páginas,10000,AWS com Forms + Tables; GCP com Form Parser
