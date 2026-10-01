@@ -106,3 +106,6 @@ response = client.detect_sentiment(
 
 print(response["Sentiment"])
 print(response["SentimentScore"])
+
+
+
