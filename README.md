@@ -1,57 +1,30 @@
-# Análise Comparativa de Serviços de Inteligência Artificial em Nuvem
+# Avaliação de APIs de PLN em Nuvem: Contexto, Ironia e Regionalismos ☁️🧠
 
-**Disciplina:** Computação em Nuvem
+Este repositório contém os códigos, datasets e apresentação da avaliação de desempenho das APIs comerciais de Processamento de Linguagem Natural (Google Cloud Natural Language e Microsoft Azure AI Language) no reconhecimento de ironias e regionalismos no Português Brasileiro.
 
-## Integrantes
+**Instituição:** Universidade de Fortaleza (Unifor)  
+**Disciplina:** Ambientes em nuvem para ciência de dados e inteligência artificial (Doutorado)  
+**Autores:** João David de Freitas Cesário, Sérgio Maia Raulino, Ana Paula Silva de Araujo  
 
-1. JOÃO DAVID DE FREITAS CESÁRIO
-2. SÉRGIO MAIA RAULINO
-3. ANA PAULA SILVA DE ARAUJO
+## 🎯 Objetivo e Metodologia
+Comparar a acurácia de modelos baseados em léxico (GCP e Azure) utilizando um **Teste de Ablação** de contexto. 
+1. **Com Contexto:** Texto integral contendo descrições de cenário (ex: `[Cliente irritado] 'Parabéns pela velocidade'`).
+2. **Sem Contexto:** Fala extraída isoladamente via Regex (ex: `'Parabéns pela velocidade'`).
 
-## Etapa 1 — Análise Comparativa
+**Dataset:** `ramondomiingos/ptbr-irony-idioms-regionalism` (Hugging Face - 90 frases).
 
-Este repositório contém os resultados da Etapa 1 do trabalho,
-com foco na análise técnica e econômica de serviços de
-Inteligência Artificial oferecidos por:
+## 📊 Resultados e Conclusão
+| Cenário | Google Cloud (GCP) | Microsoft Azure |
+| :--- | :---: | :---: |
+| **Com Contexto** | 37.78% | 27.78% |
+| **Sem Contexto** | 30.00% | 23.33% |
 
-- Amazon Web Services (AWS)
-- Microsoft Azure
-- Google Cloud
+Os resultados confirmaram uma alta taxa de Falsos Positivos em frases irônicas. Ferramentas de análise de sentimentos puramente baseadas na valência do léxico tendem a falhar drasticamente ao processar figuras de linguagem e pragmática cultural, dependendo severamente de marcações de contexto explícitas.
 
-## Categorias analisadas
+## 📂 Estrutura do Repositório
+- `/dados`: Bases CSV geradas contendo os outputs brutos de ambas as nuvens.
+- `/imagens`: Gráficos gerados da matriz de confusão e comparação de acurácia.
+- `/src/analise_nuvem.py`: Código sanitizado do pipeline utilizado.
+- `apresentacao_pln_nuvem_unifor.pdf`: Slides finais da pesquisa.
 
-### 1. Processamento de Linguagem Natural
-Análise de sentimento.
-
-Serviços:
-- Amazon Comprehend
-- Google Cloud Natural Language
-- Azure AI Language
-
-### 2. Análise de imagens
-Detecção e classificação de conteúdo em imagens.
-
-Serviços:
-- Amazon Rekognition
-- Google Cloud Vision
-- Azure AI Vision
-
-### 3. Análise e extração de documentos
-Extração de texto e informações estruturadas.
-
-Serviços:
-- Amazon Textract
-- Google Document AI
-- Azure Document Intelligence
-
-## Estrutura do repositório
-
-- `relatorio_analise_ia.md` — relatório da Etapa 1
-- `codigo_exemplos/` — exemplos de utilização das APIs
-- `analise_economica/` — dados e cenários de preços
-- `referencias/` — documentação e fontes consultadas
-
-## Observação
-
-A análise econômica registra as fontes, regiões e datas de
-consulta dos preços utilizados.
+*(Nota de segurança: O código foi higienizado. Nenhuma chave de API ou credencial está exposta no repositório).*

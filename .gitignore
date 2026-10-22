@@ -1,9 +1,4 @@
-__pycache__/
-*.pyc
+*.json
 .env
-.env.*
-credentials.json
-service-account*.json
-*.pem
-venv/
-.venv/
+__pycache__/
+*.ipynb_checkpoints/
