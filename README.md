@@ -27,4 +27,3 @@ Os resultados confirmaram uma alta taxa de Falsos Positivos em frases irônicas.
 - `/src/analise_nuvem.py`: Código sanitizado do pipeline utilizado.
 - `apresentacao_pln_nuvem_unifor.pdf`: Slides finais da pesquisa.
 
-*(Nota de segurança: O código foi higienizado. Nenhuma chave de API ou credencial está exposta no repositório).*
